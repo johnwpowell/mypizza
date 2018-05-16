@@ -29,7 +29,7 @@ namespace MyPizza.Web.Controllers
 
                 return Created("http://mypizza.com/orders/" + orderId, orderId);
             }
-            catch (Exception ex)
+            catch (Exception ex) //todo: add exception filter
             {
                 loggingService.LogError(ex.Message);
 

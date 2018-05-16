@@ -9,12 +9,6 @@ namespace MyPizza.IntegrationTests
     [TestClass]
     public class PizzaOrderServiceTests
     {
-        [TestInitialize]
-        public void Setup()
-        {
-            AutoMapperConfig.Initialize();
-        }
-
         [TestMethod]
         public async Task PizzaOrderServiceOrderTest()
         {
@@ -35,6 +29,12 @@ namespace MyPizza.IntegrationTests
                 var orderId = await service.OrderMenuItemAsync(1);
                 Assert.IsTrue(orderId != 0);
             }
+        }
+
+        [TestInitialize]
+        public void Setup()
+        {
+            AutoMapperConfig.Initialize();
         }
     }
 }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPizza.UnitTests", "MyPizz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPizza.IntegrationTests", "MyPizza.IntegrationTests\MyPizza.IntegrationTests.csproj", "{E2087BFC-46EE-4030-9B2B-422A9C55594A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{046476DF-CA49-484A-9873-5B7ECE9FBE31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BAF03AA2-63B2-4C93-913B-68057A8875A2} = {046476DF-CA49-484A-9873-5B7ECE9FBE31}
+		{E2087BFC-46EE-4030-9B2B-422A9C55594A} = {046476DF-CA49-484A-9873-5B7ECE9FBE31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A413F7E-3F0B-437A-8E1D-A34EF515EE84}
